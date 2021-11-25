@@ -1,5 +1,4 @@
 const IdCard = ({ firstName, lastName, picture, gender, height, birth }) => {
-  console.log(birth);
   return (
     <div className="card">
       <div className="left">
@@ -19,8 +18,7 @@ const IdCard = ({ firstName, lastName, picture, gender, height, birth }) => {
           <strong>Height:</strong> {height}
         </p>
         <p>
-          <strong>Birth:</strong> {birth.getDate()}/{birth.getMonth() + 1}/
-          {birth.getFullYear()}
+          <strong>Birth</strong>: {birth.toDateString()}
         </p>
       </div>
     </div>
