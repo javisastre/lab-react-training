@@ -28,3 +28,33 @@ p {
 div {
   margin: 10px 0;
 }
+
+.credit-card {
+  border-radius: 5px;
+  width: 98vw;
+  height: 60vw;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.credit-card .card-type {
+  padding: 0 8px;
+  display: flex;
+  justify-content: right;
+}
+
+.credit-card img {
+  width: 20vw;
+  height: auto;
+}
+
+.card-number {
+  font-size: 2em;
+}
+
+.card-owner {
+  text-align: left;
+  padding: 0 15px;
+}
