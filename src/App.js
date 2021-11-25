@@ -19,7 +19,7 @@ function App() {
         gender="Female"
         height={165}
         birth={new Date(1994, 0, 18)}
-        picture="https://randomuser.me/api/portraits/men/44.jpg"
+        picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
     </div>
   );

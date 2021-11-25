@@ -1,25 +1,26 @@
 const IdCard = ({ firstName, lastName, picture, gender, height, birth }) => {
   console.log(birth);
   return (
-    <div>
-      <div>
+    <div className="card">
+      <div className="left">
         <img src={picture} alt="profile" />
       </div>
-      <div>
+      <div className="right">
         <p>
-          <strong>First Name: {firstName}</strong>
+          <strong>First Name:</strong> {firstName}
         </p>
         <p>
-          <strong>Last Name: {lastName}</strong>
+          <strong>Last Name:</strong> {lastName}
         </p>
         <p>
-          <strong>Gender: {gender}</strong>
+          <strong>Gender:</strong> {gender}
         </p>
         <p>
-          <strong>Height: {height}</strong>
+          <strong>Height:</strong> {height}
         </p>
         <p>
-          <strong>Birth: {birth.getDay()} {birth.getDate()}</strong>
+          <strong>Birth:</strong> {birth.getDate()}/{birth.getMonth() + 1}/
+          {birth.getFullYear()}
         </p>
       </div>
     </div>
