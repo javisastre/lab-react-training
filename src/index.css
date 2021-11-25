@@ -20,3 +20,11 @@ code {
   text-align: left;
   padding-left: 10px;
 }
+
+p {
+  margin: 0;
+}
+
+div {
+  margin: 10px 0;
+}
