@@ -3,11 +3,15 @@ const NumbersTable = ({ limit }) => {
 
   return (
     <div className="iteration12">
-      {buildArray(limit).map((element) => {
+      {buildArray(limit).map((element, i) => {
         return element % 2 === 0 ? (
-          <div className="red">{element}</div>
+          <div className="red" key={i}>
+            {element}
+          </div>
         ) : (
-          <div className="white">{element}</div>
+          <div className="white" key={i}>
+            {element}
+          </div>
         );
       })}
     </div>
