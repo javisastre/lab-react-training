@@ -72,3 +72,11 @@ div {
   height: 20vw;
   border-radius: 50%;
 }
+.like {
+  display: flex;
+  justify-content: center;
+}
+.clickable-picture {
+  width: 95vw;
+  height: auto;
+}

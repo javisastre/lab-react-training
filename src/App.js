@@ -8,6 +8,7 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -30,13 +31,10 @@ function App() {
       />
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">Ludwig</Greetings>
-
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -91,8 +89,15 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
-      <LikeButton />
-      <LikeButton />
+      <div className="like">
+        <LikeButton /> <LikeButton />
+      </div>
+      <ClickablePicture
+        img="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
+        imgClicked="https://i5.walmartimages.com/asr/624f8431-b244-4b3a-9864-eca1268d6b37.85304a9e75827db6de5e2da988b22b7e.jpeg"
+      className="clickable-picture"
+
+      />
     </div>
   );
 }
