@@ -88,3 +88,8 @@ div {
   height: auto;
   margin: 15px 0;
 }
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+}
