@@ -9,6 +9,9 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import max1 from './assets/images/maxence.png';
+import max2 from './assets/images/maxence-glasses.png';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -92,12 +95,8 @@ function App() {
       <div className="like">
         <LikeButton /> <LikeButton />
       </div>
-      <ClickablePicture
-        img="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
-        imgClicked="https://i5.walmartimages.com/asr/624f8431-b244-4b3a-9864-eca1268d6b37.85304a9e75827db6de5e2da988b22b7e.jpeg"
-      className="clickable-picture"
-
-      />
+      <ClickablePicture img={max1} imgClicked={max2} />
+      <Dice />
     </div>
   );
 }

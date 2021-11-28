@@ -11,6 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card {
   display: flex;
   flex-direction: row;
@@ -79,4 +86,5 @@ div {
 .clickable-picture {
   width: 95vw;
   height: auto;
+  margin: 15px 0;
 }

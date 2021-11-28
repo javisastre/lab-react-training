@@ -11,7 +11,7 @@ const ClickablePicture = ({ img, imgClicked }) => {
       src={image}
       alt=""
       onClick={() => toggleImage()}
-      class="clickable-picture"
+      className="clickable-picture"
     />
   );
 };
