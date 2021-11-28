@@ -58,3 +58,17 @@ div {
   text-align: left;
   padding: 0 15px;
 }
+.driver-license {
+  display: flex;
+  justify-content: space-around;
+  width: 95vw;
+  height: auto;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(7, 75, 163);
+}
+.round {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+}
